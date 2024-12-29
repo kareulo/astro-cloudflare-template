@@ -1,6 +1,6 @@
 # 🚀 Astro + Cloudflare Template
 
-A minimal Astro + Cloudflare template to quickly kickstart your project.
+A minimal Astro + Cloudflare template.
 
 ## 🛠️ Prerequisites
 

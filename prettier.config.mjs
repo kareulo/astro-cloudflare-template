@@ -11,7 +11,7 @@ export default {
       },
     },
   ],
-  plugins: ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-astro"],
+  plugins: ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-astro", "prettier-plugin-tailwindcss"],
   printWidth: 120,
   semi: false,
 }

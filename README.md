@@ -18,25 +18,29 @@ corepack enable pnpm
 
    ```sh
    gh repo create <your-project-name> \
-     --public \
      --clone \
-     --template astro-cloudflare-template
+     --public # or --private \
+     --template kareulo/astro-cloudflare-template
    ```
 
-   > Replace `<your-project-name>` with your desired name.
+   > Replace `<your-project-name>` with your actual project name.
 
-2. Update the project name in `package.json` and `wrangler.toml`.
+2. Update the project name in `package.json` and `wrangler.toml`. Consider updating the SEO configurations in the `<head>` tag of `page.astro`.
 3. Install dependencies:
 
    ```sh
    pnpm install
    ```
 
-4. Start development:
+4. Start developing:
+
+   The server will listen on `http://localhost:4321`. To stop it, press `Ctrl-c`.
 
    ```sh
    pnpm dev
    ```
+
+Once you're done, consider removing this README.md and creating your own. Happy coding!
 
 ## 🤝 Contribution
 

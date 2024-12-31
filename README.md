@@ -1,6 +1,6 @@
 # 🚀 Astro + Cloudflare Template
 
-A minimal template for integrating Astro with Cloudflare.
+A minimal template to integrate Astro with Cloudflare.
 
 ## 🛠️ Prerequisites
 
@@ -14,28 +14,35 @@ corepack enable pnpm
 
 ## 👨‍🚀 Getting Started
 
-1. Clone the template using the **Use the template** button or with GitHub CLI:
+1. Clone the template using the **Use the template** button or GitHub CLI:
 
    ```sh
    gh repo create <your-project-name> \
      --clone \
-     --public # or --private \
+     --public \
      --template kareulo/astro-cloudflare-template
    ```
 
-   > Replace `<your-project-name>` with your project name.
+   > **Important:** Replace `<your-project-name>` with your actual project name.
 
-2. Update project settings:
+   > **Note:** Change `--public` to `--private` if you prefer a private repository.
 
-   - Change the project name in `package.json` and `wrangler.toml`.
-   - Update SEO meta tags in `page.astro`.
-   - Set your site's URL in `astro.config.mjs`.
-   - Edit `pages/robots.txt.ts` as needed.
-
-3. Install dependencies and start development:
+2. Install dependencies:
 
    ```sh
    pnpm install
+   ```
+
+3. Update the project settings:
+
+   - Change the project name in `package.json` and `wrangler.toml`.
+   - Update SEO meta tags in `src/pages/index.astro`.
+   - Set your site’s URL in `astro.config.mjs`.
+   - Modify `src/pages/robots.txt.ts` as needed.
+
+4. Start the development server:
+
+   ```sh
    pnpm dev
    ```
 
@@ -43,4 +50,4 @@ Once set up, replace this README with your own. Happy coding!
 
 ## 🤝 Contribution
 
-Feel free to contribute! Open issues or submit pull requests for suggestions, bug fixes, or improvements.
+Contributions are welcome! Open issues or submit pull requests for suggestions, bug fixes, or improvements.

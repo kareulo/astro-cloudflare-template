@@ -1,12 +1,16 @@
 {
   "name": "Astro Cloudflare Template",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22",
+
+  // Ports that are forwarded from the container to the local machine.
   "forwardPorts": [4321],
+
   "customizations": {
     "vscode": {
       "extensions": ["astro-build.astro-vscode", "bradlc.vscode-tailwindcss", "esbenp.prettier-vscode"],
       "settings": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
         "editor.quickSuggestions": {
           "comments": "off",
           "other": "on",

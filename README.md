@@ -2,16 +2,6 @@
 
 A minimal template to integrate Astro with Cloudflare.
 
-## 🛠️ Prerequisites
-
-Ensure `pnpm` is installed. If not, run:
-
-```sh
-corepack enable pnpm
-```
-
-> If this fails, follow the installation guide at [pnpm.io](https://pnpm.io/installation).
-
 ## 👨‍🚀 Getting Started
 
 1. Clone the template using the **Use the template** button or GitHub CLI:
@@ -30,12 +20,12 @@ corepack enable pnpm
 2. Install dependencies:
 
    ```sh
-   pnpm install
+   yarn install
    ```
 
 3. Update the project settings:
 
-   - Change the project name in `package.json` and `wrangler.toml`.
+   - Change the name in `.devcontainer/devcontainer.json`, `package.json` and `wrangler.toml`.
    - Update SEO meta tags in `src/pages/index.astro`.
    - Set your site’s URL in `astro.config.mjs`.
    - Modify `src/pages/robots.txt.ts` as needed.
@@ -43,7 +33,7 @@ corepack enable pnpm
 4. Start the development server:
 
    ```sh
-   pnpm dev
+   yarn dev
    ```
 
 Once set up, replace this README with your own. Happy coding!

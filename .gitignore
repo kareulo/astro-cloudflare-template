@@ -21,8 +21,10 @@ pnpm-debug.log*
 .DS_Store
 Thumbs.db
 
-# jetbrains setting directory
+# editor settings directory
 .idea/
+.vscode/
+.zed/
 
 # wrangler
 .wrangler/

@@ -12,6 +12,8 @@
       "onAutoForward": "openBrowserOnce"
     }
   },
+  "postCreateCommand": "yarn install",
+  "waitFor": "postCreateCommand",
   "customizations": {
     "vscode": {
       "extensions": [

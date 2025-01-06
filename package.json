@@ -1,4 +1,5 @@
 {
+  "_comment": "Update the 'name' key with your project name, then remove this comment",
   "name": "astro-cloudflare-template",
   "type": "module",
   "version": "0.0.1",

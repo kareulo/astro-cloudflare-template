@@ -4,14 +4,14 @@ A minimal template to integrate Astro with Cloudflare.
 
 ## 🛠️ Prerequisites
 
-- **Visual Studio Code**: Recommended editor for development with Dev Containers.
-- **Docker**: Required for Dev Containers to spin up a containerized development environment.
+- **Visual Studio Code**: Use this editor for development with Dev Containers.
+- **Docker**: Install Docker to set up a containerized development environment.
 
 ## 👨‍🚀 Getting Started
 
 1. **Clone the template**:
 
-   Use the **Use the template** button on GitHub or run the following command if you have the GitHub CLI installed:
+   Click the **Use the template** button on GitHub or run the following command (GitHub CLI required):
 
    ```sh
    gh repo create YOUR_PROJECT_NAME \
@@ -21,22 +21,20 @@ A minimal template to integrate Astro with Cloudflare.
    ```
 
    > **Important**: Replace `YOUR_PROJECT_NAME` with your project name.
+   > **Note**: Use `--private` for a private repository.
 
-   > **Note**: Change `--public` to `--private` for a private repository.
-
-   Alternatively, use Git to clone the repository:
+   Alternatively, clone the repository using Git:
 
    ```sh
    git clone https://github.com/kareulo/astro-cloudflare-template.git YOUR_PROJECT_NAME
    cd YOUR_PROJECT_NAME
-   rm -rf .git # Remove existing git repository
-   git init # Initialize a new git repository
+   rm -rf .git # Remove existing Git repository
+   git init # Initialize a new Git repository
    ```
 
 2. **Open the project**:
 
    - Open the project in Visual Studio Code.
-   - (Optional) Update the project name in `.devcontainer/devcontainer.json`.
    - Press `Ctrl + Shift + P` (or `Cmd + Shift + P` on macOS).
    - Type `Dev Containers: Reopen in Container` and press Enter.
 
@@ -46,14 +44,7 @@ A minimal template to integrate Astro with Cloudflare.
    yarn install
    ```
 
-4. **Modify the project settings**:
-
-   - Update the project name in `package.json` and `wrangler.toml`.
-   - Modify SEO meta tags in `src/pages/index.astro`.
-   - Set your site’s URL in `astro.config.mjs`.
-   - Update `src/pages/robots.txt.ts` as needed.
-
-5. **Start the development server**:
+4. **Start the development server**:
 
    ```sh
    yarn dev
@@ -61,6 +52,11 @@ A minimal template to integrate Astro with Cloudflare.
 
 Once set up, feel free to replace this README with your own. Happy coding!
 
-## 🤝 Contribution
+---
 
-Contributions are welcome! Open issues or submit pull requests for suggestions, bug fixes, or improvements.
+> **Note**: Check and update the following files as needed:
+>
+> - `.devcontainer/devcontainer.json`
+> - `astro.config.mjs`
+> - `package.json`
+> - `wrangler.toml`

@@ -6,6 +6,7 @@ import tailwind from "@astrojs/tailwind"
 
 // https://astro.build/config
 export default defineConfig({
+  // Update the "site" key with your URL, then remove this comment
   site: "https://example.com",
   adapter: cloudflare({
     platformProxy: {
@@ -13,9 +14,7 @@ export default defineConfig({
     },
   }),
   integrations: [
-    // https://docs.astro.build/en/guides/integrations-guide/sitemap/
-    sitemap(),
-    // https://docs.astro.build/en/guides/integrations-guide/tailwind/
-    tailwind(),
+    sitemap(), // https://docs.astro.build/en/guides/integrations-guide/sitemap/
+    tailwind(), // https://docs.astro.build/en/guides/integrations-guide/tailwind/
   ],
 })

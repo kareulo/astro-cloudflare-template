@@ -1,0 +1,18 @@
+---
+import { SEO } from "astro-seo"
+---
+
+<head>
+  <!-- https://github.com/jonasmerlin/astro-seo?tab=readme-ov-file#supported-props -->
+  <SEO
+    charset="UTF-8"
+    extend={{
+      link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
+      meta: [
+        { name: "viewport", content: "width=device-width, initial-scale=1.0" },
+        { name: "generator", content: Astro.generator },
+      ],
+    }}
+  />
+  <slot />
+</head>

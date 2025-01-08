@@ -49,14 +49,14 @@ After cloning the repository, open the project in Visual Studio Code. The next s
 - Run `Dev Containers: Reopen in Container`.
 
 > [!NOTE]
-> The first build takes time because it builds the Docker image specified in the `devcontainer.json` configuration, then runs `yarn install` to set up dependencies. Subsequent rebuilds will be faster.
+> The first build takes time because it builds the Docker image specified in the `devcontainer.json` configuration, then runs `npm install` to set up dependencies. Subsequent rebuilds will be faster.
 
 ### 3. Start the Development Server
 
 Once the environment is set up, start the development server:
 
 ```sh
-yarn dev
+npm run dev
 ```
 
 Feel free to replace this README with your own once everything is ready. Happy coding!
